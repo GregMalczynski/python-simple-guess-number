@@ -20,12 +20,12 @@ else:
 os.system('cls')
 
 while answer_count:
-    guest_number = input('Try guess the number : ')
-    if guest_number > secret_number[0]:
+    guess_number = input('Try guess the number : ')
+    if guess_number > secret_number[0]:
         print('Number too high, try again ')
-    elif guest_number < secret_number[0]:
+    elif guess_number < secret_number[0]:
         print('Number too low, try again ')
-    elif guest_number == secret_number[0]:
+    elif guess_number == secret_number[0]:
         print('Perfect !!! You tried ',answer_count,' times')
         break
     answer_count += 1
